@@ -1,0 +1,73 @@
+/* Header container styles */
+.header-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Set the header to a fixed position */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Make the header span the entire viewport width */
+    z-index: 100; /* Ensure the header is on top of other content */
+    margin-bottom: 20px;
+  }
+  
+  /* Header content styles */
+  .header-content {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* H1 styles */
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Adjust the gap as needed */
+  }
+  
+  .nav-item {
+    display: inline;
+  }
+
+  .item-list {
+    padding: 10px;
+  }
+
+  .item-list:hover {
+    background-color: #ff6600;
+  }
+  
+  /* Navigation link styles */
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Resume button styles */
+  .resume-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .resume-button:hover {
+    background-color: #ff3300;
+  }
