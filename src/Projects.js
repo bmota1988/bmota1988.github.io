@@ -5,12 +5,12 @@ function Projects() {
   // Define an array of project data
   const projects = [
     {
-      title: "Tribute Page",
-      description: "Tribute Page created with HTML, and CSS.",
-      techStack: "HTML, CSS",
-      demoLink: "https://codepen.io/bruno-mota/full/yLvyQzB",
-      codeLink: "https://github.com/bmota1988/Tribute_Page",
-      image: "./Tribute_Page.png",
+      title: "Landing Page - Coffee Shop",
+      description: "Landing Page created with React.",
+      techStack: "HTML, CSS, JavaScript, React",
+      demoLink: "https://codepen.io/bruno-mota/full/PoNzqXp",
+      codeLink: "https://github.com/bmota1988/coffee-landing-page",
+      image: "./thumbnail-coffee-shop.png",
     },
     {
       title: "Survey Form",
@@ -43,6 +43,14 @@ function Projects() {
       demoLink: "https://codepen.io/bruno-mota/full/mdLVjBb",
       codeLink: "https://github.com/bmota1988/Portfolio_Page",
       image: "./Portfolio.png",
+    },
+    {
+      title: "Tribute Page",
+      description: "Tribute Page created with HTML, and CSS.",
+      techStack: "HTML, CSS",
+      demoLink: "https://codepen.io/bruno-mota/full/yLvyQzB",
+      codeLink: "https://github.com/bmota1988/Tribute_Page",
+      image: "./Tribute_Page.png",
     },
   ];
 
