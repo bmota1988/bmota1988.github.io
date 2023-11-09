@@ -71,22 +71,3 @@
   .resume-button:hover {
     background-color: #ff3300;
   }
-
-
-@media only screen and (max-width: 600px) {
-  /* Adjustments for smaller screens */
-
-  .header-content {
-    flex-direction: column; /* Stack items vertically on small screens */
-    text-align: center; /* Center align text on small screens */
-  }
-
-  .nav-list {
-    flex-direction: column; /* Stack navigation items vertically on small screens */
-    gap: 10px; /* Adjust the gap for smaller screens */
-  }
-
-  .resume-button {
-    margin-top: 10px; /* Add some space above the resume button on small screens */
-  }
-}
