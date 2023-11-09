@@ -33,9 +33,13 @@ function Contact() {
     },
     {
       name: "Email",
-      url: "bmota1988@gmail",
+      url: "bmota1988@gmail.com",
       icon: (
-        <Button variant="success" href="mailto:bmota1988@gmail" target="_blank">
+        <Button
+          variant="success"
+          href="mailto:bmota1988@gmail.com"
+          target="_blank"
+        >
           <i className="fas fa-envelope"></i> Send Email
         </Button>
       ),
