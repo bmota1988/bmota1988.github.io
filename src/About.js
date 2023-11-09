@@ -1,12 +1,21 @@
 import React from "react";
-import "./style/About.css"; // Import the CSS file for the About component
+import "./style/About.css";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
 
 function About() {
   return (
     <section className="about-container">
       <div className="about-content content-below-header">
         <div className="about-image">
-          <img src="perfil_Bruno_Mota.jpg" alt="Perfil - Bruno Mota" />
+          <Container>
+            <Image
+              src="perfil_Bruno_Mota.jpg"
+              alt="Bruno Mota"
+              rounded
+              width={350}
+            />
+          </Container>
         </div>
         <div className="about-text">
           <h2>About Me</h2>

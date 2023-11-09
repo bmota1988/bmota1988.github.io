@@ -1,29 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style/Header.css";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 function Header() {
   return (
-    <header className="header-container">
-      <div className="header-content">
-        <nav>
-          <ul className="nav-list">
-            <li className="item-list">
-              <Link to="/">About</Link>
-            </li>
-            <li className="item-list">
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li className="item-list">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-        <a href="./public/Resume - Bruno Mota.pdf" download>
-          <button className="resume-button">Resume</button>
-        </a>
-      </div>
-    </header>
+    <Navbar
+      expand="lg"
+      data-bs-theme="dark"
+      className="bg-body-tertiary navbar-position-fixed"
+    >
+      <Container>
+        <Navbar.Collapse expand="lg" className="space-between">
+          <Nav>
+            <LinkContainer to="/">
+              <Nav.Link>About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/projects">
+              <Nav.Link>Projects</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/contact">
+              <Nav.Link>Contact</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+        <Button
+          variant="success"
+          href="./public/Resume - Bruno Mota.pdf"
+          download
+        >
+          Resume
+        </Button>
+      </Container>
+    </Navbar>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
-import "./style/Projects.css"; // Import the CSS file for the Projects component
+import "./style/Projects.css";
+import { Button, Card, ListGroup } from "react-bootstrap";
 
 function Projects() {
   // Define an array of project data
@@ -55,34 +56,64 @@ function Projects() {
   ];
 
   return (
-    <section className="projects-container content-below-header">
+    <section className="projects-container">
       <h2>Projects</h2>
       <div className="projects-list">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
-            <img src={project.image} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <p>
-              <strong>Tech Stack:</strong> {project.techStack}
-            </p>
-            <div className="project-links">
-              <a
-                href={project.demoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-              <a
-                href={project.codeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code
-              </a>
-            </div>
-          </div>
+          // <div className="project-card" key={index}>
+          //   <img src={project.image} alt={project.title} />
+          //   <h3>{project.title}</h3>
+          //   <p>{project.description}</p>
+          //   <p>
+          //     <strong>Tech Stack:</strong> {project.techStack}
+          //   </p>
+          //   <div className="project-links">
+          //     <a
+          //       href={project.demoLink}
+          //       target="_blank"
+          //       rel="noopener noreferrer"
+          //     >
+          //       Demo
+          //     </a>
+          //     <a
+          //       href={project.codeLink}
+          //       target="_blank"
+          //       rel="noopener noreferrer"
+          //     >
+          //       Code
+          //     </a>
+          //   </div>
+          // </div>
+          <Card className="project-card" style={{ width: "20rem" }} key={index}>
+            <Card.Img
+              variant="top"
+              src={project.image}
+              alt={project.title}
+              width={100}
+            />
+            <Card.Body>
+              <Card.Title>{project.title}</Card.Title>
+              <ListGroup className="list-group-flush">
+                <ListGroup.Item>{project.description}</ListGroup.Item>
+                <ListGroup.Item>
+                  <Button
+                    variant="dark"
+                    href={project.demoLink}
+                    target="_blank"
+                  >
+                    Demo
+                  </Button>{" "}
+                  <Button
+                    variant="dark"
+                    href={project.codeLink}
+                    target="_blank"
+                  >
+                    Code
+                  </Button>
+                </ListGroup.Item>
+              </ListGroup>
+            </Card.Body>
+          </Card>
         ))}
       </div>
     </section>
