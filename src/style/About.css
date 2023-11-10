@@ -31,7 +31,7 @@
 .about-text {
   flex: 1;
   padding: 0 15px; /* Add padding to both sides for better readability on smaller screens */
-  text-align: justify;
+  text-align: left;
 }
 
 /* Media query for smaller screens */
