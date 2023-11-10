@@ -13,7 +13,7 @@ function About() {
               src="perfil_Bruno_Mota.jpg"
               alt="Bruno Mota"
               rounded
-              width={350}
+              width={300}
             />
           </Container>
         </div>

@@ -6,12 +6,13 @@ import { LinkContainer } from "react-router-bootstrap";
 function Header() {
   return (
     <Navbar
-      expand="lg"
+      expand="md"
       data-bs-theme="dark"
-      className="bg-body-tertiary navbar-position-fixed"
+      className="bg-body-tertiary"
+      fixed="top"
     >
       <Container>
-        <Navbar.Collapse expand="lg" className="space-between">
+        <Navbar.Collapse className="space-between">
           <Nav>
             <LinkContainer to="/">
               <Nav.Link>About</Nav.Link>
