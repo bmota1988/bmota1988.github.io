@@ -2,8 +2,38 @@ import React from "react";
 import "./style/Header.css";
 import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import { useEffect, useState } from "react";
 
 function Header() {
+  const [isLoading, setLoading] = useState(false);
+
+  useEffect(() => {
+    function simulateNetworkRequest() {
+      return new Promise((resolve) => setTimeout(resolve, 2000));
+    }
+
+    if (isLoading) {
+      simulateNetworkRequest().then(() => {
+        setLoading(false);
+      });
+    }
+  }, [isLoading]);
+
+  const handleClick = () => setLoading(true);
+
+  const handleDownload = () => {
+    const documentURL = "./Resume - Bruno Mota.pdf";
+    const link = document.createElement("a");
+    link.href = documentURL;
+    link.download = "Resume - Bruno Mota.pdf";
+    link.click();
+  };
+
+  const handleCombined = () => {
+    handleDownload();
+    handleClick();
+  };
+
   return (
     <>
       {[false].map((expand) => (
@@ -42,10 +72,11 @@ function Header() {
                 <hr />
                 <Button
                   variant="success"
-                  href="./public/Resume - Bruno Mota.pdf"
+                  disabled={isLoading}
+                  onClick={!isLoading ? handleCombined : null}
                   download
                 >
-                  Resume
+                  {isLoading ? "Loading…" : "Resume"}
                 </Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
