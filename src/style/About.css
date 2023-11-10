@@ -6,20 +6,17 @@
   padding: 3rem;
 }
 
-/* About content styles */
 .about-content {
   display: flex;
-  flex-direction: column; /* Adjust layout for smaller screens */
-  align-items: center;
+  flex-direction: column;
+  align-items: center; 
 }
 
-/* About image styles */
 .about-image {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem; /* Add some spacing between image and text on smaller screens */
+  margin-bottom: 2rem;
 }
 
 .about-image img {
@@ -27,14 +24,11 @@
   height: auto;
 }
 
-/* About text styles */
 .about-text {
-  flex: 1;
-  padding: 0 15px; /* Add padding to both sides for better readability on smaller screens */
-  text-align: left;
+  padding: 0 10px;
+  text-align: justify;
 }
 
-/* Media query for smaller screens */
 @media only screen and (max-width: 767px) {
   .about-container, .projects-container, .contact-container {
     margin-top: 2rem;
