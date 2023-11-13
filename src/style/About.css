@@ -26,7 +26,7 @@
 
 .about-text {
   padding: 0 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 @media only screen and (max-width: 767px) {

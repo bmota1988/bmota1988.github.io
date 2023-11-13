@@ -39,7 +39,7 @@ function Header() {
       {[false].map((expand) => (
         <Navbar
           key={expand}
-          expand={expand}
+          // expand={expand}
           fixed="top"
           data-bs-theme="dark"
           className="bg-body-tertiary mb-3"
