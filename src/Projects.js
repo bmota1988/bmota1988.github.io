@@ -7,9 +7,9 @@ function Projects() {
   const projects = [
     {
       title: "Landing Page - Coffee Shop",
-      description: "Landing Page created with React.",
-      techStack: "HTML, CSS, JavaScript, React",
-      demoLink: "https://codepen.io/bruno-mota/full/LYqWVdO",
+      description: "Landing Page created with React and Bootstrap.",
+      techStack: "HTML, CSS, JavaScript, React, and Bootstrap",
+      demoLink: "https://landingpage-coffee-shop.netlify.app/",
       codeLink: "https://github.com/bmota1988/coffee-landing-page",
       image: "./thumbnail-coffee-shop.png",
     },
