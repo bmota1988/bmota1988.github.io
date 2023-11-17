@@ -18,15 +18,16 @@ function Projects() {
       description: "Survey Form created with React, and Bootstrap.",
       techStack: "HTML, CSS, JS, React, and Bootstrap",
       demoLink: "https://gym-form-react.netlify.app/",
-      codeLink: "https://github.com/bmota1988/Survey_Form",
+      codeLink: "https://github.com/bmota1988/gym-form-react",
       image: "./Survey_Form.png",
     },
     {
-      title: "Form",
-      description: "New Survey form created with HTML, and CSS.",
-      techStack: "HTML, CSS",
-      demoLink: "https://codepen.io/bruno-mota/full/vYRoPWj",
-      codeLink: "https://github.com/bmota1988/Survey_Form_New",
+      title: "Generic Survey Form",
+      description:
+        "Generic Survey Form created with React and React Bootstrap.",
+      techStack: "React, React Bootstrap",
+      demoLink: "https://generic-form-survey.netlify.app/",
+      codeLink: "https://github.com/bmota1988/Generic-Survey-Form",
       image: "./Form.png",
     },
     {
